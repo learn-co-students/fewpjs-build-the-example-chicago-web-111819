@@ -14,11 +14,13 @@ errorDiv.classList.add('hidden');
 // })
 
 glyphHeart.addEventListener("click", function() {
-  console.log('clicked!')
+  // console.log('clicked!')
   if (glyphHeart.innerText === EMPTY_HEART){
     glyphHeart.innerText = FULL_HEART
+    glyphHeart.classList.add('activated-heart')
   } else if (glyphHeart.innerHTML === FULL_HEART) {
     glyphHeart.innerHTML = EMPTY_HEART
+    glyphHeart.classList.remove('activated-heart')
   }
   // document.getElementById('modal').display = "block";
 
